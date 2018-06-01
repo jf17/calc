@@ -39,7 +39,7 @@ int main(){
     
     char a ='d';
     
-    cout<<"What a function + or * ?"<< endl;
+    cout<<"What a operation '+' or '* '?"<< endl;
     cin>>a;
 
     if(a=='+'){ plus_num();}
