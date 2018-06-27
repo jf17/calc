@@ -1,20 +1,17 @@
 #include<iostream>
 
-using namespace std;
-
-
 void plus_num(){
 
     int a =0;
     int b =0;
     
-    cout<<"Enter an a : ";
-    cin>>a;
+    std::cout<<"Enter an a : ";
+    std::cin>>a;
     
-    cout<<"Enter an b : ";
-    cin>>b;
+    std::cout<<"Enter an b : ";
+    std::cin>>b;
     
-    cout<<"a + b = " << a + b << endl;
+    std::cout<<"a + b = " << a + b << std::endl;
 
 
 }
@@ -23,13 +20,13 @@ void multiplication_num(){
     int a =0;
     int b =0;
     
-    cout<<"Enter an a : ";
-    cin>>a;
+    std::cout<<"Enter an a : ";
+    std::cin>>a;
     
-    cout<<"Enter an b : ";
-    cin>>b;
+    std::cout<<"Enter an b : ";
+    std::cin>>b;
     
-    cout<<"a + b = " << a * b << endl;
+    std::cout<<"a + b = " << a * b << std::endl;
     
     
 }
@@ -39,8 +36,8 @@ int main(){
     
     char a ='d';
     
-    cout<<"What a operation '+' or '* '?"<< endl;
-    cin>>a;
+    std::cout<<"What a operation '+' or '* '?"<< std::endl;
+    std::cin>>a;
 
     if(a=='+'){ plus_num();}
     else if (a=='*'){multiplication_num();}
