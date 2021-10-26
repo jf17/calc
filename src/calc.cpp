@@ -5,28 +5,28 @@ int main() {
     char op;
     float num1, num2;
 
-    cout << "Enter operator: +, -, *, /: ";
+    cout << "Enter operator (+, -, *, /) :" << endl;
     cin >> op;
 
-    cout << "Enter two operands: ";
+    cout << "Enter two operands:" << endl;
     cin >> num1 >> num2;
 
     switch(op) {
         case '+':
-            cout << num1 << " + " << num2 << " = " << num1 + num2;
+            cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
             break;
 
         case '-':
-            cout << num1 << " - " << num2 << " = " << num1 - num2;
+            cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
             break;
 
         case '*':
-            cout << num1 << " * " << num2 << " = " << num1 * num2;
+            cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
             break;
 
 
         case '/':
-            cout << num1 << " / " << num2 << " = " << num1 / num2;
+            cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
             break;
 
         default:
