@@ -1,46 +1,39 @@
-#include<iostream>
+# include <iostream>
+using namespace std;
 
-void plus_num(){
+int main() {
+    char op;
+    float num1, num2;
 
-    int a =0;
-    int b =0;
-    
-    std::cout<<"Enter an a : ";
-    std::cin>>a;
-    
-    std::cout<<"Enter an b : ";
-    std::cin>>b;
-    
-    std::cout<<"a + b = " << a + b << std::endl;
+    cout << "Enter operator: +, -, *, /: ";
+    cin >> op;
 
+    cout << "Enter two operands: ";
+    cin >> num1 >> num2;
 
-}
-void multiplication_num(){
-    
-    int a =0;
-    int b =0;
-    
-    std::cout<<"Enter an a : ";
-    std::cin>>a;
-    
-    std::cout<<"Enter an b : ";
-    std::cin>>b;
-    
-    std::cout<<"a * b = " << a * b << std::endl;
-    
-    
-}
+    switch(op) {
+        case '+':
+            cout << num1 << " + " << num2 << " = " << num1 + num2;
+            break;
+
+        case '-':
+            cout << num1 << " - " << num2 << " = " << num1 - num2;
+            break;
+
+        case '*':
+            cout << num1 << " * " << num2 << " = " << num1 * num2;
+            break;
 
 
-int main(){
-    
-    char a ='d';
-    
-    std::cout<<"What a operation '+' or '* '?"<< std::endl;
-    std::cin>>a;
+        case '/':
+            cout << num1 << " / " << num2 << " = " << num1 / num2;
+            break;
 
-    if(a=='+'){ plus_num();}
-    else if (a=='*'){multiplication_num();}
-    
+        default:
+            // If the operator is other than +, -, * or /, error message is shown
+            cout << "Error! operator is not correct";
+            break;
+    }
+
     return 0;
 }
