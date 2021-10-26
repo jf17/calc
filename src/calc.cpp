@@ -26,7 +26,7 @@ void multiplication_num(){
     std::cout<<"Enter an b : ";
     std::cin>>b;
     
-    std::cout<<"a + b = " << a * b << std::endl;
+    std::cout<<"a * b = " << a * b << std::endl;
     
     
 }
